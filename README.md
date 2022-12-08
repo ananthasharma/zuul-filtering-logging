@@ -2,6 +2,8 @@
 filter and log requests during routing with Zuul
 
 Its recommended to use `spring-cloud-gateway` instead of zuul which is supported by __recent springboot releases__. 
+
+
 **Zuul is no longer supported in springboot**
 
 ## What does this do
