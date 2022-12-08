@@ -1,0 +1,61 @@
+20:32:30,577 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+20:32:30,578 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/asharma/projects/hsbc/zuul/zuul-filter-logging/target/zuul_filter_logging-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/logback.xml]
+20:32:30,672 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2752f6e2 - URL [jar:file:/Users/asharma/projects/hsbc/zuul/zuul-filter-logging/target/zuul_filter_logging-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/logback.xml] is not of type file
+20:32:30,861 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+20:32:30,893 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+20:32:30,907 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+20:32:31,095 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+20:32:31,095 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+20:32:31,095 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+20:32:31,098 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to INFO
+20:32:31,098 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework] to false
+20:32:31,098 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[org.springframework]
+20:32:31,099 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.anantha] to DEBUG
+20:32:31,099 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.anantha] to false
+20:32:31,099 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[com.anantha]
+20:32:31,099 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.netflix] to INFO
+20:32:31,099 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.netflix] to false
+20:32:31,100 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[com.netflix]
+20:32:31,100 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+20:32:31,100 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+20:32:31,100 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+20:32:31,102 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@e580929 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+20:32:33.099 [main] INFO  c.a.a.z.ZuulFilterLoggingApplication - No active profile set, falling back to default profiles: default
+20:32:34.753 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+20:32:35.002 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1f1cba59-ca79-3ef9-b146-75d33789d73e
+20:32:35.978 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:32:35.996 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:32:35.997 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:32:35.998 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+20:32:36.101 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:32:36.101 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2953 ms
+20:32:36.265 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+20:32:36.266 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:32:36.294 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@756cf158
+20:32:36.611 [main] WARN  o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+20:32:36.612 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+20:32:36.612 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:32:36.978 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:32:38.132 [main] INFO  o.s.c.n.zuul.ZuulFilterInitializer - Starting filter initializer
+20:32:38.154 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+20:32:38.196 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:32:38.234 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:32:38.273 [main] INFO  c.a.a.z.ZuulFilterLoggingApplication - Started ZuulFilterLoggingApplication in 6.898 seconds (JVM running for 8.378)
+20:33:15.053 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:33:15.053 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:33:15.064 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+20:33:15.992 [http-nio-8080-exec-1] INFO  c.a.a.z.f.ZuulResponseLoggingFilter - response for: /products/2, duration(HH:mm:ss.SSS): 00:00:00.792
+20:33:25.843 [http-nio-8080-exec-2] INFO  c.a.a.z.f.ZuulResponseLoggingFilter - response for: /users/1, duration(HH:mm:ss.SSS): 00:00:00.098
+20:33:28.050 [http-nio-8080-exec-3] INFO  c.a.a.z.f.ZuulResponseLoggingFilter - response for: /users/2, duration(HH:mm:ss.SSS): 00:00:00.100
+20:33:55.380 [SpringContextShutdownHook] INFO  o.s.c.n.zuul.ZuulFilterInitializer - Stopping filter initializer
+20:33:55.390 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
