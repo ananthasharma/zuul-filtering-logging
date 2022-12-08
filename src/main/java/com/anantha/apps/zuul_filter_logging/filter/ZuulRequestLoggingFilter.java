@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author Anantha Sharma
@@ -37,7 +36,6 @@ public class ZuulRequestLoggingFilter extends ZuulFilter {
 
     @Override
     public Object run() throws ZuulException {
-        var callFor = RequestContext.getCurrentContext().getRequest().getRequestURI();
         /*
         lets track what time the request started
          */
