@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.anantha.apps</groupId>
     <artifactId>zuul_filter_logging</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <name>zuul-filter-logging</name>
     <description>zuul-filter-logging</description>
     <properties>
